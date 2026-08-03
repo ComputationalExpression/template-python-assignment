@@ -1,0 +1,9 @@
+- description: "Run pytest with mockro stubs"
+  check: ExecuteCommand
+  options:
+    command: uv run pytest
+
+- description: "Run mypy type checks"
+  check: ExecuteCommand
+  options:
+    command: uv run mypy src tests
